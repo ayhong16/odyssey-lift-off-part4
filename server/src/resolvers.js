@@ -15,6 +15,11 @@ const resolvers = {
       return dataSources.trackAPI.getModule(id);
     },
   },
+
+  // Mutation: {
+  //   incrementTrackViews: 
+  // },
+
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
       return dataSources.trackAPI.getAuthor(authorId);
